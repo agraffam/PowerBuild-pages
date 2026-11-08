@@ -24,7 +24,7 @@
   <main>
     <nav><a href="index.html">PowerBuild</a> · <a href="support.html">Support</a></nav>
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective: June 6, 2026</p>
+    <p class="updated">Effective: November 8, 2026</p>
 
     <p>PowerBuild ("we", "the app") is a strength-training app for iPhone operated by Alan Graffam. This policy describes what data we collect, how we use it, and your choices.</p>
 
@@ -36,6 +36,9 @@
       <li><strong>Name</strong> (optional) — if you set a display name in Settings → Account.</li>
       <li><strong>Fitness data</strong> — workout logs you enter: exercises, sets, weight, reps, RPE, WOD scores, session notes, and related training preferences.</li>
       <li><strong>Programs</strong> — active and completed program instances, custom programs you create, and community programs you choose to share publicly.</li>
+      <li><strong>Nutrition and body data (Macros, optional)</strong> — if you turn on Macros: the foods you log and their amounts, saved meals and recipes, foods you create, meal check-ins, weigh-ins, and your nutrition plan (goal, activity level, meal times, targets, and optional sex, birth year, height and body-fat percentage used to estimate your calorie needs).</li>
+      <li><strong>Apple Health data (optional)</strong> — if you turn on Settings → Macros → Apple Health: body weight read from Health is stored with your weigh-ins. Food you log can be written to Health (calories, protein, carbohydrates, fat).</li>
+      <li><strong>Food searches and barcodes</strong> — search words and barcodes you look up, used to find foods.</li>
     </ul>
 
     <h2>How we use data</h2>
@@ -43,25 +46,36 @@
       <li>Authenticate you and sync your data across sessions and devices.</li>
       <li>Display your training history, analytics, estimated 1RM profiles, and optional leaderboard rank.</li>
       <li>Operate community program sharing when you opt in.</li>
+      <li>Calculate and adjust your nutrition targets, show your weight trend and estimated maintenance, and send meal and weigh-in reminders you turn on.</li>
     </ul>
     <p>We do <strong>not</strong> use your data for advertising, sell it to third parties, or track you across other companies' apps or websites.</p>
 
     <h2>Where data is stored</h2>
-    <p>Account and workout data are stored in <a href="https://supabase.com/privacy" rel="noopener">Supabase</a> (hosted PostgreSQL and authentication), which processes data on our behalf. Data is[...]
+    <p>Account and workout data are stored in <a href="https://supabase.com/privacy" rel="noopener">Supabase</a> (hosted PostgreSQL and authentication), which processes data on our behalf. Data is transmitted over HTTPS.</p>
 
     <h2>Leaderboard</h2>
-    <p>If you log qualifying lifts, your monthly estimated 1RM may appear on the global leaderboard ("The Board") under an anonymized display name derived from your account — not your email addr[...]
+    <p>If you log qualifying lifts, your monthly estimated 1RM may appear on the global leaderboard ("The Board") under an anonymized display name derived from your account — not your email address.</p>
 
     <h2>Community content</h2>
-    <p>If you enable "Share with community" on a custom program, other PowerBuild users can browse and activate that program template. Community sharing includes program metadata and workout struc[...]
+    <p>If you enable "Share with community" on a custom program, other PowerBuild users can browse and activate that program template. Community sharing includes program metadata and workout structure only — no direct messages or media uploads.</p>
+
+    <h2>Macros and Apple Health</h2>
+    <p>Macros is optional and off until you turn it on in Settings → Macros. Nutrition and body data you enter are stored in your account so they sync between your devices.</p>
+    <p>Apple Health access is optional and off until you turn it on in Settings → Macros → Apple Health. PowerBuild reads only body weight and writes only the food you log (calories, protein, carbohydrates, fat). Weights read from Health are stored in your account like weights you type. We never use Health data for advertising or marketing, never sell it, and never share it with third parties. You can turn Health access off at any time in Settings → Macros or in the Health app.</p>
+    <p>Barcode and nutrition-label photos are read on your device to find numbers and are not uploaded or stored.</p>
+
+    <h2>Food databases</h2>
+    <p>When you search online or scan a barcode, our server looks the food up in <a href="https://world.openfoodfacts.org/privacy" rel="noopener">Open Food Facts</a> and <a href="https://fdc.nal.usda.gov/" rel="noopener">USDA FoodData Central</a>. Only the search words or barcode are sent to them, from our server, not your name, email or account. Food data from Open Food Facts is available under the Open Database License (ODbL).</p>
 
     <h2>Data on your device</h2>
-    <p>The app stores session tokens and local preferences (e.g. tracked lifts for charts) using iOS UserDefaults. This stays on your device.</p>
+    <p>The app stores session tokens and local preferences (e.g. tracked lifts for charts, rest-timer sounds, Apple Health switches) using iOS UserDefaults, plus copies of your recent training and nutrition data so the app works without a signal. Changes made offline are kept on your device until they sync. This stays on your device and is removed when you delete your account.</p>
 
     <h2>Third-party services</h2>
     <ul>
       <li><strong>Supabase</strong> — authentication, database, and account deletion.</li>
       <li><strong>Sign in with Apple</strong> — optional primary sign-in method governed by Apple's privacy terms.</li>
+      <li><strong>Open Food Facts and USDA FoodData Central</strong> — food search and barcode lookup (search words and barcodes only).</li>
+      <li><strong>Apple Health</strong> — optional, only if you turn it on; governed by Apple's privacy terms.</li>
     </ul>
     <p>We do not integrate third-party analytics or advertising SDKs.</p>
 
